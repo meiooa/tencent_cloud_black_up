@@ -122,6 +122,12 @@ def get_info(SecretId, SecretKey, region, InstanceIds):
         client = lighthouse_client.LighthouseClient(cred, region, clientProfile)
         req = models.DescribeSnapshotsRequest()
         params = {
+            "Filters": [
+                {
+                    "Name": "instance-id",
+                    "Values": [ InstanceIds ]
+                }
+            ]
         }
         req.from_json_string(json.dumps(params))
         resp = client.DescribeSnapshots(req)
