@@ -11,5 +11,7 @@ pip install -i https://mirrors.tencent.com/pypi/simple/ --upgrade tencentcloud-s
 
 0 3 */3 * *  user /usr/bin/python /p/a/t/h/Qcloud_Snapshot.py
 
+另 腾讯云子账号设置权限的方法 https://hostloc.com/thread-877959-1-1.html 
+
 # Qcloud_TrafficPackages
 腾讯云轻量云流量监控，超标自己关机
